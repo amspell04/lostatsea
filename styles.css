@@ -14,19 +14,19 @@ body{
     background-repeat: no-repeat;
 }
 
-p{
+#msg{
     font-family: serif;
     font-size: 100%;
     margin: 10px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 h1{
     color: white;
     font-size: 280%;
     letter-spacing: 1px;
-    line-height: 30%;
+    line-height: 50%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -62,23 +62,23 @@ header{
 }
 
 #subhead{
-    padding-top: 20px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #05868E;
-    height: 15.75vh;
+    height: 10vh;
 
 }
 
 #whitebar{
-    background-color: white;
-    height:7.7vh;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     color: black;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 #bluebar{
     background-color: #05868E;
@@ -94,6 +94,31 @@ header{
     margin:5px;
 }
 
+#bcktotop{
+    position: -webkit-sticky;
+    position:sticky;  
+    top:0;
+    margin:10px;
+  
+}
+
+#bcktotoplabel{
+    color:black;
+    font-family: serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 120%;
+    padding:5px;
+}
+
+#bcktotoplabel:hover{
+    background-color:#05868E;
+    color:white;
+    transition: ease;
+}
+
+
 .img{
     display: flex;
     justify-content: space-evenly;
@@ -102,37 +127,55 @@ header{
 }
 
 img{
-    width: 30%;
+    width: 50%;
+    margin: 5px;
+    transition: 2s ease;
 }
 
+img:hover{
+    width:80%;
+    transition: 2s ease;
+}
+
+
 .nav{
+    color:white;
+    background-color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
     text-align: center;
-    color: black;
     font-family: serif;
-    font-weight: bold;
     margin: 10px;
     border-width: 2px;
-    border-radius: 2px;
+    border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
     height:5.7vh;
-    background-color: #e5daa2;
 }
 
 .nav:hover{
-    color:#05868E;
-    background-color: #dfd9ba;
+    color: black;
+    transition: .5s ease;
+    background-color: #e5daa2;
 }
 
 #hders{
     text-align: center;
     background-color: #e5daa2;
+    border-style: solid;
+    border-right: 0;
+    border-left: 0;
     font-size:120%;
     padding: 1vh;
     font-family: serif;
     letter-spacing: 1px;
 }
 
+@media (max-width: 480px){
+    img{
+        width: 80%;
+        margin: 5px;
+        transition: 2s ease;
+    }
+}
