@@ -58,6 +58,9 @@ header{
 #blckbar{
     background-color: black;
     height: 6vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     color: white;
 }
 
@@ -170,6 +173,37 @@ img:hover{
     padding: 1vh;
     font-family: serif;
     letter-spacing: 1px;
+}
+
+#fm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.formbx{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+#fmname{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 5px;
+    font-family: serif;
+    border-radius: 5px;
+    background-color: #e5daa2;
+}
+
+#fmname:hover{
+    background-color:black;
+    transition: .5s ease;
+    color:#e5daa2;
 }
 
 @media (max-width: 480px){
