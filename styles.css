@@ -12,7 +12,9 @@ body{
     background: linear-gradient(180deg,#05868E 10% , #ebf8e1be, #e5daa2 );
     background-size: 200%;
     background-repeat: no-repeat;
+    height: 200vh;
 }
+
 
 #msg{
     font-family: serif;
