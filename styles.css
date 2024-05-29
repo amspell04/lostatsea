@@ -15,6 +15,13 @@ body{
     height: 100%;
 }
 
+.missing{
+    color:#e5daa2;
+}
+
+.missing2{
+    color:#05868E;
+}
 
 #msg{
     font-family: serif;
